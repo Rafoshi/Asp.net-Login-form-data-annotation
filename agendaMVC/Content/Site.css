@@ -1,0 +1,126 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #dcc0f5;
+    overflow-x: hidden;
+}
+
+.containter-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 99vw;
+}
+
+    .containter-all h1 {
+        font-size: 46px;
+        font-weight: 600;
+        color: #121212;
+        margin-top: 15vh;
+    }
+
+.subtitle {
+    margin-bottom: 5vh;
+}
+
+    .subtitle small {
+        font-size: 20px;
+        font-weight: 300;
+        color: #1f1f1f;
+    }
+
+.container-form {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+}
+
+.all-field {
+    margin-bottom: 20px;
+}
+
+#main {
+    width: 100%;
+}
+
+.div-form-without-button {
+    width: 100%;
+}
+
+form #main .all-field .editor-label label {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+form #main .all-field .editor-field input {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #a490b6;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 100%;
+}
+
+    form #main .all-field .editor-field input:hover,
+    input:focus {
+        outline-style: none;
+        outline: none;
+    }
+
+.btn {
+    border-style: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px;
+    color: #121212;
+    border-radius: 8px;
+    margin-top: 5vh;
+    width: 100%;
+    background-color: #f08080;
+    transition: all 0.2s;
+}
+
+    .btn:hover {
+        background-color: #f19292;
+        transform: scale(1.01);
+    }
+
+/*Page list*/
+
+.container-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+label {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.container-list .editor-label {
+    font-size: 24px;
+    color: #121212;
+}
+
+.container-list .editor-field {
+    font-size: 18px;
+}

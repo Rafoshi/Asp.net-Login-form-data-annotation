@@ -1,0 +1,69 @@
+﻿@model agendaMVC.Models.Agenda
+@{
+    ViewBag.Title = "Lista";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container-list">
+        <label>Dados dos contatos</label>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Nome)
+        </div>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.CPF)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.CPF)
+        </div>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Endereco)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Endereco)
+        </div>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Cidade)
+        </div>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.UF)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.UF)
+        </div>
+
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Aniversario)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Aniversario)
+        </div>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Email)
+        </div>
+        <div class="editor-label">
+            @Html.DisplayNameFor(model => model.Celular)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Celular)
+        </div>
+
+
+        @Html.ActionLink("Voltar", "Index", "Home")
+    </div>
+</body>
+</html>
+

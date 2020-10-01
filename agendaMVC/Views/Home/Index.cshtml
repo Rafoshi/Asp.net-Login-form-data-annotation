@@ -1,0 +1,119 @@
+﻿@model agendaMVC.Models.Agenda
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="containter-all">
+        <div class="title-form">
+            <h1>Cadasatro de usuário</h1>
+        </div>
+        <div class="subtitle">
+            <small>Informe os dados do usuário</small>
+        </div>
+        <div class="container-form">
+            @using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+             {
+                @Html.ValidationSummary(true)
+                <div id="main">
+                    <div class="div-form-without-button">
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Nome)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.Nome)
+                                @Html.ValidationMessageFor(model => model.Nome)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.CPF)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.CPF)
+                                @Html.ValidationMessageFor(model => model.CPF)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Endereco)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.Endereco)
+                                @Html.ValidationMessageFor(model => model.Endereco)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Cidade)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.Cidade)
+                                @Html.ValidationMessageFor(model => model.Cidade)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.UF)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.UF)
+                                @Html.ValidationMessageFor(model => model.UF)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Aniversario)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.Aniversario)
+                                @Html.ValidationMessageFor(model => model.Aniversario)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Email)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.Email)
+                                @Html.ValidationMessageFor(model => model.Email)
+                            </div>
+                        </div>
+
+                        <div class="all-field">
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Celular)
+                            </div>
+                            <div class="editor-field">
+                                @Html.EditorFor(model => model.Celular)
+                                @Html.ValidationMessageFor(model => model.Celular)
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="button">
+                        <input class="btn" type="submit" value="Cadastrar" />
+                    </div>
+                </div>
+             }
+            
+        </div>
+    </div>
+    @section Scripts{
+        @Scripts.Render("~/bundles/jqueryval");
+    }
+</body>
+</html>
+
